@@ -74,8 +74,8 @@
 1. Клонируйте репозиторий:
 
     ```bash
-    git clone https://github.com/yourusername/click-tracking.git
-    cd click-tracking
+    git clone https://github.com/Ivan812000/test-task-metrics.git
+    cd test-task-metrics
     ```
 
 2. Установите PHP зависимости:
