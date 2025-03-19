@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Отслеживание кликов</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
@@ -31,8 +30,7 @@
             const timestamp = new Date().toISOString();
             const site_id = '3';
             const url = window.location.href;
-            const user_id = 'user-123';
-            const data = { x, y, timestamp, site_id, url, user_id, _token: csrfToken };
+            const data = { x, y, timestamp, site_id, url, _token: csrfToken };
             return fetch("http://127.0.0.1:8000/api/clicks/", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },

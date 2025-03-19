@@ -14,7 +14,6 @@ class ClickController extends Controller {
             'y' => 'required|integer',
             'url' => 'required|string',
             'timestamp' => 'required|date',
-            'user_id' => 'required|string',
         ]);
 
         $data['timestamp'] = Carbon::parse($data['timestamp'])->format('Y-m-d H:i:s');
