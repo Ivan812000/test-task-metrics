@@ -28,7 +28,7 @@
             const x = event.clientX;
             const y = event.clientY;
             const timestamp = new Date().toISOString();
-            const site_id = '3';
+            const site_id = '1';
             const url = window.location.href;
             const data = { x, y, timestamp, site_id, url, _token: csrfToken };
             return fetch("http://127.0.0.1:8000/api/clicks/", {
